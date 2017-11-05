@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="quicknote.css"/>
+  </head>
+
+<body>
+  <div class="outer-wrapper">
+  <center>
+  <canvas id="canvas" width="150" height="150"
+style="background-color:#843757">
+</canvas>
+</center>
+  
+    <div class="new-note">
+      <input type="text">
+      <textarea></textarea>
+	  <input type="date" name="tododate">
+	 <select name="Priority">
+     <option value="High">High</option>
+     <option value="Medium">Medium</option>
+     <option value="Low">Low</option>
+     </select>
+	<br/>
+      <button class="clear">Clear list</button>
+      <button class="add"> Add new</button>
+      <div class="clearfix"></div>
+    </div>
+    
+    <div class="note-container">
+ 
+    </div>
+  </div>
+
+  <script src="quicknote.js"></script>
+</body>
+
+</html>
