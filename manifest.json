@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+  "name": "Easy Note",
+  "version": "1.1",
+
+  "description": "Allows the user to make quick notes by clicking a button and entering text into the resulting popup. The notes are saved in storage",
+  "icons": {
+    "48": "icons/todo_list.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "32": "icons/todo_list.png"
+    },
+    "default_title": "To Do List",
+    "default_popup": "todolist.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "todolist-example@mozilla.org"
+    }
+  }
+
+}

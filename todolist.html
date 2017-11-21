@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               
+            </div> <!-- close col -->
+        </div> <!-- close row -->
+
+        <form id="newItemForm" class="form-horizontal">
+            <p id="paraToHideForm"><a href="#" id="hideForm">View your To Do list</a></p>
+
+        <fieldset class="well">
+        <legend>Add a New To Do Item</legend>
+
+            <div class="form-group">
+                <label for="itemname" class="col-sm-2 control-label">Item Name</label>
+                <div class="col-sm-10">
+                <input type="text" name="itemname" id="itemname" class="form-control" maxlength="80" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="duedate" class="col-sm-2 control-label">Due Date</label>
+                <div class="col-sm-10">
+                <input type="date" name="duedate" id="duedate" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="descrip" class="col-sm-2 control-label">Details</label>
+                <div class="col-sm-10">
+                <textarea name="descrip" id="descrip" rows="4" maxlength="300" placeholder="No more than 300 characters long" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+            <label for="priority" class="col-sm-2 control-label">Priority</label>
+                <div class="col-sm-10">
+                <select class="form-control" name="priority" id="priority">
+                <option value=1>Highest</option>
+                <option value=2>High</option>
+                <option value=3 selected>Middle</option>
+                <option value=4>Low</option>
+                <option value=5>Lowest</option>
+                </select>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-4 col-sm-offset-2 col-xs-12">
+                    <input type="submit" class="btn btn-success form-control" value="Add Item">
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <input type="reset" class="btn btn-default form-control" value="Cancel">
+                </div>
+            </div>
+
+        </fieldset>
+        </form>
+        <!-- this will be hidden at times -->
+        <div class="row" id="toDoDataRow">
+            <div class="col-xs-12">
+                <h2>My To Do Items</h2>
+                <p><a href="#" id="showForm">Enter a new To Do item</a> &mdash; open form</p>
+
+                <!-- buttons above list -->
+                <div class='floater'>
+                    <button class='btn btn-success removeAll'>Remove Checked Items</button>
+                </div>
+                <div class='floater'>
+                    <button class='btn btn-primary' id='sortPri'>Sort by Priority</button>
+                </div>
+                <div class='floater'>
+                    <button class='btn btn-info' id='sortDate'>Sort by Due Date</button>
+                </div>
+
+                <!-- To Do items go here -->
+                <div id="toDoData" class="clearfix"></div>
+                <!-- final button -->
+                <div class='floater'>
+                    <button class='btn btn-success removeAll'>Remove Checked Items</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div> <!-- close container -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
