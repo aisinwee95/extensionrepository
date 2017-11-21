@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "name": "To-DO List",
+  "name": "Easy Note",
   "version": "1.1",
 
   "description": "Allows the user to make quick notes by clicking a button and entering text into the resulting popup. The notes are saved in storage. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#quicknote",
@@ -17,13 +17,13 @@
     "default_icon": {
       "32": "icons/todo_list.png"
     },
-    "default_title": "To-DO List",
-    "default_popup": "popup/quicknote.html"
+    "default_title": "Easy Note",
+    "default_popup": "popup/easynote.html"
   },
 
   "applications": {
     "gecko": {
-      "id": "quicknote-example@mozilla.org"
+      "id": "easynote-example@mozilla.org"
     }
   }
 
