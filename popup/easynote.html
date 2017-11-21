@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="easynote.css"/>
+  </head>
+
+<body>
+        <div class="outer-wrapper">
+            <center>
+                <canvas id="canvas" width="150" height="150"
+                        style="background-color:#843757"></canvas>
+            </center>
+
+            <p>
+                <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+            </p>
+
+            <h3>Todo</h3>
+            <ul id="incomplete-tasks">
+                <li><input type="checkbox"><label>Submit Open source assignment </label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                <li><input type="checkbox"><label>Complete Open Source assignment</label><input type="text" value="Complete Open Source assignment"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+
+            </ul>
+
+            <h3>Completed</h3>
+            <ul id="completed-tasks">
+                <li><input type="checkbox" checked><label>Find information on Open Source</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            </ul>
+        </div>
+    </div>
+  <script src="easynote.js"></script>
+</body>
+
+</html>
