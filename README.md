@@ -1,2 +1,0 @@
-# Easy Note Web Extension
-
